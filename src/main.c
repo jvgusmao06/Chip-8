@@ -38,16 +38,15 @@ int main(int argc, char *argv[])
 {
     const char *rom_path = NULL;
 
-    // Se o emulador foi chamado pelo Hub ou terminal com argumento de ROM
+    // O caminho da ROM deve ser fornecido via argumento (pelo Hub ou linha de comando)
     if (argc > 1)
     {
         rom_path = argv[1];
     }
     else
     {
-        // Fallback para execução standalone sem argumentos
-        printf("Nenhuma ROM passada via argumento. Tentando roms/Pong.ch8...\n");
-        rom_path = "roms/Pong.ch8";
+        printf("Uso: %s <caminho_da_rom.ch8>\n", argv[0]);
+        printf("Dica: Use o launcher 'Central Emulators' para escolher e iniciar suas ROMs.\n");
     }
 
     // 1. Inicializa o SDL3

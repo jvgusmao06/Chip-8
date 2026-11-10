@@ -1,7 +1,13 @@
-# Binários e objetos de compilação
+# Binários e executáveis
+*.exe
+exe/
+build/
 *.o
 *.obj
-build/
+
+# ROMs (devem ser fornecidas pelo usuário)
+*.ch8
+roms/
 
 # Logs e arquivos temporários
 *.log
