@@ -1,0 +1,13 @@
+# Binários e objetos de compilação
+*.o
+*.obj
+build/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
